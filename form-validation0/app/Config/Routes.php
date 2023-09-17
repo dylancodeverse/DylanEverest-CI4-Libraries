@@ -31,19 +31,11 @@ $routes->set404Override();
 // route since we don't have to scan directories.
 $routes->get('/', 'Home::index');
 
-/*
- * --------------------------------------------------------------------
- * Additional Routing
- * --------------------------------------------------------------------
- *
- * There will often be times that you need additional routing and you
- * need it to be able to override any defaults in this file. Environment
- * based routes is one such time. require() additional route files here
- * to make that happen.
- *
- * You will have access to the $routes object within that file without
- * needing to reload it.
- */
+
+$routes->get('form', [\App\Controllers\user\UserValidation::class,'index']);
+$routes->post('form', [\App\Controllers\user\UserValidation::class,'index']);
+
+
 if (is_file(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php')) {
     require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }

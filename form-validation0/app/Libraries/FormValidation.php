@@ -8,11 +8,11 @@ class FormValidation extends BaseController {
 
 
     // need to be lowercased
-    protected array $allowedMethods = ['post', 'get'];
+    protected array $allowedMethods = ['post'];
 
     protected $helpers = ['form'];
 
-    public function verification ($rules=null , $errors =null) 
+    public function verification ($rules=null , $errors =[]) 
     {
 
         if (!in_array($this->request->getMethod(false), $this->allowedMethods, true)) {
