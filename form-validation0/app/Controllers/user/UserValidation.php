@@ -18,12 +18,19 @@ class UserValidation extends FormValidation {
 
     protected $nonValidView ='form/signup';
 
+    protected ?string $methodAfterValidation = 'coucou' ;
+
 
     public function index()
     {
 
         return $this->verification($this->rules);
 
+    }
+
+    public function coucou()
+    {
+        echo 'coucou' ;
     }
 
 }
