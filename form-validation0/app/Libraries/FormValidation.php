@@ -81,6 +81,8 @@ class FormValidation extends BaseController {
 
         if($this->isValidDatas( $rules , $errors))
         {
+            // function to call after validation
+
             return view ($this->validView,$this->validViewOptions) ;
         }
 
