@@ -6,7 +6,7 @@ use App\Libraries\FormValidation;
 
 class UserValidation extends FormValidation {
 
-    protected $signupRules = [
+    protected $rules = [
 
         'username' => 'required',
         'password' => 'required|min_length[10]',
@@ -14,16 +14,15 @@ class UserValidation extends FormValidation {
         'email'    => 'required|valid_email',
 
     ];
+    protected $validView = 'form/success_page' ;
 
+    protected $nonValidView ='form/signup';
 
 
     public function index()
     {
 
-        $this->validView = 'form/success_page' ;
-        $this->nonValidView ='form/signup';
-
-        return $this->verification($this->signupRules);
+        return $this->verification($this->rules);
 
     }
 

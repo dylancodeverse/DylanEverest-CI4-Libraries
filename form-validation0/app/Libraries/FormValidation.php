@@ -7,6 +7,16 @@ use App\Controllers\BaseController;
 class FormValidation extends BaseController {
 
     /**
+     * 
+     */
+    protected $rules =[];
+
+    /**
+     * 
+     */
+    protected $errors = [] ;
+
+    /**
      * Array of all allowed methods request and always set it to lowercase
      * @var array
      */
@@ -16,12 +26,22 @@ class FormValidation extends BaseController {
      * 
      */
     protected $validView='' ;
+
+    /**
+     * 
+     */
+    protected array $validViewOptions =[];
     
     /**
      * 
      */
     protected $nonValidView='' ;
     
+    /**
+     * 
+     */
+    protected array $nonValidViewOptions= [] ;
+
 
 
     protected $helpers = ['form'];
@@ -46,13 +66,26 @@ class FormValidation extends BaseController {
     /**
      * Main function for form validation
      */
-    public function verification ($rules=null , $errors =[])
+    public function verification ($rules = null, $errors = null)
     {
-        if($this->isValidDatas($rules , $errors))
+
+        if ($rules === null) 
         {
-            return view ($this->validView) ;
+            $rules = $this->rules;
         }
-        return view ($this->nonValidView) ;
+
+        if ($errors === null) 
+        {
+            $errors = $this->errors;
+        }
+
+        if($this->isValidDatas( $rules , $errors))
+        {
+            return view ($this->validView,$this->validViewOptions) ;
+        }
+
+        return view ($this->nonValidView , $this->nonValidViewOptions) ;
+
     }
 
 }
