@@ -15,13 +15,16 @@ class UserValidation extends FormValidation {
 
     ];
 
+
+
     public function index()
     {
-        if ($this->verification($this->signupRules) ) 
-        {
-            return view('form/success_page');
-        }
-        return view('form/signup');
+
+        $this->validView = 'form/success_page' ;
+        $this->nonValidView ='form/signup';
+
+        return $this->verification($this->signupRules);
+
     }
 
 }
