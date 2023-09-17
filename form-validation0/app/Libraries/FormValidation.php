@@ -53,7 +53,7 @@ class FormValidation extends BaseController {
      * Data validation
      */
 
-    public function isValidDatas ($rules=null , $errors =[]) 
+    public function isValidData ($rules=null , $errors =[]) 
     {
 
         if (!in_array($this->request->getMethod(false), $this->allowedMethods, true)) {
@@ -82,13 +82,13 @@ class FormValidation extends BaseController {
             $errors = $this->errors;
         }
 
-        if($this->isValidDatas( $rules , $errors))
+        if($this->isValidData( $rules , $errors))
         {
-            // Si methodAfterValidation est définie, l'appeler
+
             if ($this->methodAfterValidation !== null && method_exists($this, $this->methodAfterValidation)) 
             {
                 $methodName = $this->methodAfterValidation;
-                $this->$methodName(); // Appel de la méthode
+                $this->$methodName(); 
             }
 
             return view ($this->validView,$this->validViewOptions) ;
