@@ -5,7 +5,9 @@ namespace App\Libraries;
 class MultiModels 
 {
     protected $models =array() ;
+
     protected $db ;
+
 
     public function __construct($modelss=null,string $group )
     {
@@ -30,19 +32,23 @@ class MultiModels
 
         try 
         {
-            $i =0;
+
             foreach ($this->models as $modelClass) 
             {
-
-
                 // Instanciez le modèle avec l'instance de la base de données
+                var_dump($data);
+                echo 'tay';
+                echo'';
                 $model = new $modelClass($this->db);
-
                 // Insérez les données dans la table spécifiée pour chaque modèle
+                $keyValue= $model->insert($data,true);
 
-                $model->insert($data[$i]);
-                $i++;
-                echo "af";
+                $pk = $model->primaryKey ;
+
+                $data[$pk] =$keyValue ;
+
+                
+
             }
 
             $this->db->transComplete(); // Terminez la transaction
