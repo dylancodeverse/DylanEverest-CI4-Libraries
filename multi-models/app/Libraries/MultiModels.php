@@ -35,19 +35,14 @@ class MultiModels
 
             foreach ($this->models as $modelClass) 
             {
-                // Instanciez le modèle avec l'instance de la base de données
-                var_dump($data);
-                echo 'tay';
-                echo'';
+
                 $model = new $modelClass($this->db);
-                // Insérez les données dans la table spécifiée pour chaque modèle
+
                 $keyValue= $model->insert($data,true);
 
                 $pk = $model->primaryKey ;
 
                 $data[$pk] =$keyValue ;
-
-                
 
             }
 
