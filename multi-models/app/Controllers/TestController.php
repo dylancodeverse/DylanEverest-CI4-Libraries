@@ -42,4 +42,32 @@ class TestController extends Controller
             echo "Une erreur s'est produite lors de l'insertion des données.";
         }
     }
+
+    public function delete ()
+    {
+        $refIdsToDelete = [
+            'orders_id' => 4,
+            'products_id' => 19,
+            'user_id' => 19
+        ];
+
+        $models = [
+            OrdersModel::class,
+            ProductModel::class,
+            UserModel::class,
+        ];
+
+        $multiModels = new MultiModels($models ,"default");
+
+                // // Insérez les données dans les tables correspondantes en une seule transaction
+                $result = $multiModels->do_delete($refIdsToDelete);
+
+        
+                if ($result) {
+                    echo "Les données ont été supp avec succès dans les tables.";
+                } else {
+                    echo "Une erreur s'est produite lors de la' supp des données.";
+                }
+
+    }
 }
