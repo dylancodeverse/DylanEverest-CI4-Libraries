@@ -1,0 +1,18 @@
+CRITICAL - 2023-10-07 05:47:25 --> CodeIgniter\Model::insert(): Argument #2 ($returnID) must be of type bool, array given, called in /home/dylan/Desktop/Codeigniter/mine/multi-models/app/Libraries/MultiModels.php on line 54
+in SYSTEMPATH/Model.php on line 708.
+ 1 APPPATH/Libraries/MultiModels.php(54): CodeIgniter\Model->insert()
+ 2 APPPATH/Controllers/TestController.php(38): App\Libraries\MultiModels->do_insert()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TestController->index()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/dylan/Desktop/Codeigniter/mine/multi-models/public/index.php')
+CRITICAL - 2023-10-07 05:48:44 --> CodeIgniter\Model::insert(): Argument #2 ($returnID) must be of type bool, array given, called in /home/dylan/Desktop/Codeigniter/mine/multi-models/app/Libraries/MultiModels.php on line 52
+in SYSTEMPATH/Model.php on line 708.
+ 1 APPPATH/Libraries/MultiModels.php(52): CodeIgniter\Model->insert()
+ 2 APPPATH/Controllers/TestController.php(38): App\Libraries\MultiModels->do_insert()
+ 3 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TestController->index()
+ 4 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 5 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 6 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 7 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/dylan/Desktop/Codeigniter/mine/multi-models/public/index.php')

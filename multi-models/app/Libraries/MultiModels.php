@@ -1,53 +1,48 @@
 <?php
 
-class MulitModels 
+namespace App\Libraries;
+
+class MultiModels 
 {
     protected $models =array() ;
     protected $db ;
 
     public function __construct($modelss=null,string $group )
     {
-        if (!empty($models)) 
-        {
-            $this->models = $models;
-        }
+        $this->models =$modelss;
         
-        $db = \Config\Database::connect($group);
+        $this->db = \Config\Database::connect($group);
 
     }
 
 
-    public function do_insert($data, $tables = null)
+    public function do_insert($data)
     {
-        if (empty($this->models) || empty($data) || empty($tables)) 
+
+        if (empty($this->models) || empty($data) ) 
         {
+            var_dump($this->models);
             return false;
         }
 
-        if (!is_array($tables)) 
-        {
-            $tables = array($tables);
-        }
-
-        if (count($tables) !== count($this->models)) 
-        {
-            // Assurez-vous que le nombre de tables correspond au nombre de modèles
-            return false;
-        }
 
         $this->db->transStart(); // Démarrez une transaction
 
         try 
         {
-            foreach ($this->models as $key => $modelClass) 
+            $i =0;
+            foreach ($this->models as $modelClass) 
             {
-                $table = $tables[$key];
+
 
                 // Instanciez le modèle avec l'instance de la base de données
                 $model = new $modelClass($this->db);
 
                 // Insérez les données dans la table spécifiée pour chaque modèle
-                $model->insert($table, $data);
+
+                $model->insert($data[$i]);
+                $i++;
+                echo "af";
             }
 
             $this->db->transComplete(); // Terminez la transaction
