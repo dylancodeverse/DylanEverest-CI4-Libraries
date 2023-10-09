@@ -1,0 +1,24 @@
+Mots cles:
+    IHM:
+        mahavita affichage milamina:
+            code couleur
+            liste
+            faute d'orthographe
+    BDD:
+        independance ana table
+        dependance ana table -> PK
+        foreign key hoe fanaovana jointure
+
+
+        Patients(nom, date_de_naissance ) idependant
+        Traitement(  date_of_treatment,oxygen_saturation,temperature,Patients) mi dependre patients
+
+        view V_Treatment( name ,birthday,date_of_treatment,oxygen_saturation,temperature)
+
+            fk patients
+            Zone2D(temperature1 temperature2 oxygen_saturation1 oxygen_saturation2 , level (num))
+
+     ??       Zone3D(temperature1 temperature2 oxygen_saturation1 oxygen_saturation2 begin(eme jour) end(eme jour) level(num))
+
+            Zone(???) idependant
+

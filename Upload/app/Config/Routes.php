@@ -2,6 +2,8 @@
 
 namespace Config;
 
+use App\Controllers\testupload\TestUpload;
+
 // Create a new instance of our RouteCollection class.
 $routes = Services::routes();
 
@@ -29,12 +31,10 @@ $routes->set404Override();
 
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
-$routes->get('/', 'Home::index');
-$routes->get('/misa','TestController::index');
-$routes->get('/fafao','TestController::delete');
+// $routes->get('/', 'Home::index');
+$routes->get('/', [TestUpload::class,'index']);
+$routes->post('/upload', [TestUpload::class,'testUpload']);
 
-$routes->post('/test','TestController::testDATA');
-$routes->get('/view','TestController::loadView');
 
 /*
  * --------------------------------------------------------------------
