@@ -5,13 +5,12 @@ class DataFormPrepa
 {
     public function getDataForm ($method)
     {
-        
         $userData =[];
         if ( strtolower($method) =='post') 
         {
             foreach ($_POST as $key => $value) 
             {
-                $this->translate($userData, $key, $value);
+                $userData= $this->translate($userData, $key, $value);
 
             }
         }
@@ -19,22 +18,42 @@ class DataFormPrepa
         {
             foreach ($_GET as $key => $value) 
             {
-                $this->translate($userData, $key, $value);
+                $userData= $this->translate($userData, $key, $value);
             }
         }        
-
+        var_dump($userData);
         return $userData;
     }
 
     private function translate($array,$key, $value)
     {
-        if (!empty(json_decode($value))) 
+        if(is_array($value)) 
         {
-            $array[$key] = json_decode($value);             
+            foreach($value as $key1 => $value2)
+            {
+                $array[$key1]=$value2;
+            }
         }
+ 
+        elseif (!empty(json_decode($value))) 
+        {
+            $arrayAssoc = json_decode($value,true);             
+
+            foreach($arrayAssoc as $key1 => $value2)
+            {
+                $array[$key1] =$value2 ;
+            }
+                
+        }
+ 
         else
         {
             $array[$key] = $value;
         }
+
+        return $array;
     }
+
+
+
 }

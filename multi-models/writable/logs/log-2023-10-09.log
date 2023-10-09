@@ -1,0 +1,30 @@
+CRITICAL - 2023-10-09 13:38:00 --> Undefined array key "baby"
+in APPPATH/Libraries/DataFormPrepa.php on line 42.
+ 1 APPPATH/Libraries/DataFormPrepa.php(42): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Libraries/DataFormPrepa.php(13): App\Libraries\DataFormPrepa->translate()
+ 3 APPPATH/Controllers/TestController.php(81): App\Libraries\DataFormPrepa->getDataForm()
+ 4 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TestController->testDATA()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/dylan/Desktop/Codeigniter/mine/multi-models/public/index.php')
+CRITICAL - 2023-10-09 13:39:40 --> Undefined array key "baby"
+in APPPATH/Libraries/DataFormPrepa.php on line 44.
+ 1 APPPATH/Libraries/DataFormPrepa.php(44): CodeIgniter\Debug\Exceptions->errorHandler()
+ 2 APPPATH/Libraries/DataFormPrepa.php(14): App\Libraries\DataFormPrepa->translate()
+ 3 APPPATH/Controllers/TestController.php(81): App\Libraries\DataFormPrepa->getDataForm()
+ 4 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TestController->testDATA()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/dylan/Desktop/Codeigniter/mine/multi-models/public/index.php')
+CRITICAL - 2023-10-09 13:41:28 --> json_decode(): Argument #1 ($json) must be of type string, array given
+in APPPATH/Libraries/DataFormPrepa.php on line 31.
+ 1 APPPATH/Libraries/DataFormPrepa.php(31): json_decode()
+ 2 APPPATH/Libraries/DataFormPrepa.php(14): App\Libraries\DataFormPrepa->translate()
+ 3 APPPATH/Controllers/TestController.php(81): App\Libraries\DataFormPrepa->getDataForm()
+ 4 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TestController->testDATA()
+ 5 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 6 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 7 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/dylan/Desktop/Codeigniter/mine/multi-models/public/index.php')
