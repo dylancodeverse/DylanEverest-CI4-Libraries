@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Libraries\DataFormPrepa;
 use App\Models\UserModel;
 use App\Models\ProductModel;
 use App\Libraries\MultiModels;
@@ -71,5 +72,16 @@ class TestController extends Controller
 
     }
 
+    public function testDATA()
+    {
+        
 
+        $dataF= new DataFormPrepa();
+
+        $dataF->getDataForm('post');
+    }
+    public function loadView()
+    {
+        return view('dataForm');
+    }
 }

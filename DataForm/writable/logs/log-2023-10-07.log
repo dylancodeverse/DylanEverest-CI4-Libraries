@@ -1,0 +1,76 @@
+ERROR - 2023-10-07 09:50:22 --> ErrorException: pg_query(): Query failed: ERROR:  update or delete on table &quot;users&quot; violates foreign key constraint &quot;orders_user_id_fkey&quot; on table &quot;orders&quot;
+DETAIL:  Key (user_id)=(18) is still referenced from table &quot;orders&quot;. in /home/dylan/Desktop/Codeigniter/mine/multi-models/system/Database/Postgre/Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/Database/Postgre/Connection.php(187): pg_query()
+#2 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/Database/BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query()
+#5 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/Database/Postgre/Builder.php(236): CodeIgniter\Database\BaseBuilder->delete()
+#6 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/Model.php(456): CodeIgniter\Database\Postgre\Builder->delete()
+#7 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/BaseModel.php(1065): CodeIgniter\Model->doDelete()
+#8 /home/dylan/Desktop/Codeigniter/mine/multi-models/app/Libraries/MultiModels.php(85): CodeIgniter\BaseModel->delete()
+#9 /home/dylan/Desktop/Codeigniter/mine/multi-models/app/Controllers/TestController.php(63): App\Libraries\MultiModels->do_delete()
+#10 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/CodeIgniter.php(932): App\Controllers\TestController->delete()
+#11 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/dylan/Desktop/Codeigniter/mine/multi-models/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+ERROR - 2023-10-07 09:54:42 --> ErrorException: pg_query(): Query failed: ERROR:  update or delete on table &quot;users&quot; violates foreign key constraint &quot;orders_user_id_fkey&quot; on table &quot;orders&quot;
+DETAIL:  Key (user_id)=(18) is still referenced from table &quot;orders&quot;. in /home/dylan/Desktop/Codeigniter/mine/multi-models/system/Database/Postgre/Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/Database/Postgre/Connection.php(187): pg_query()
+#2 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/Database/BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query()
+#5 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/Database/Postgre/Builder.php(236): CodeIgniter\Database\BaseBuilder->delete()
+#6 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/Model.php(456): CodeIgniter\Database\Postgre\Builder->delete()
+#7 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/BaseModel.php(1065): CodeIgniter\Model->doDelete()
+#8 /home/dylan/Desktop/Codeigniter/mine/multi-models/app/Libraries/MultiModels.php(85): CodeIgniter\BaseModel->delete()
+#9 /home/dylan/Desktop/Codeigniter/mine/multi-models/app/Controllers/TestController.php(63): App\Libraries\MultiModels->do_delete()
+#10 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/CodeIgniter.php(932): App\Controllers\TestController->delete()
+#11 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/dylan/Desktop/Codeigniter/mine/multi-models/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+ERROR - 2023-10-07 09:55:12 --> ErrorException: pg_query(): Query failed: ERROR:  update or delete on table &quot;users&quot; violates foreign key constraint &quot;orders_user_id_fkey&quot; on table &quot;orders&quot;
+DETAIL:  Key (user_id)=(18) is still referenced from table &quot;orders&quot;. in /home/dylan/Desktop/Codeigniter/mine/multi-models/system/Database/Postgre/Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/Database/Postgre/Connection.php(187): pg_query()
+#2 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/Database/BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query()
+#5 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/Database/Postgre/Builder.php(236): CodeIgniter\Database\BaseBuilder->delete()
+#6 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/Model.php(456): CodeIgniter\Database\Postgre\Builder->delete()
+#7 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/BaseModel.php(1065): CodeIgniter\Model->doDelete()
+#8 /home/dylan/Desktop/Codeigniter/mine/multi-models/app/Libraries/MultiModels.php(85): CodeIgniter\BaseModel->delete()
+#9 /home/dylan/Desktop/Codeigniter/mine/multi-models/app/Controllers/TestController.php(63): App\Libraries\MultiModels->do_delete()
+#10 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/CodeIgniter.php(932): App\Controllers\TestController->delete()
+#11 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/dylan/Desktop/Codeigniter/mine/multi-models/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
+ERROR - 2023-10-07 09:55:31 --> ErrorException: pg_query(): Query failed: ERROR:  update or delete on table &quot;users&quot; violates foreign key constraint &quot;orders_user_id_fkey&quot; on table &quot;orders&quot;
+DETAIL:  Key (user_id)=(18) is still referenced from table &quot;orders&quot;. in /home/dylan/Desktop/Codeigniter/mine/multi-models/system/Database/Postgre/Connection.php:187
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/Database/Postgre/Connection.php(187): pg_query()
+#2 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/Database/BaseConnection.php(692): CodeIgniter\Database\Postgre\Connection->execute()
+#3 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/Database/BaseConnection.php(606): CodeIgniter\Database\BaseConnection->simpleQuery()
+#4 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/Database/BaseBuilder.php(2791): CodeIgniter\Database\BaseConnection->query()
+#5 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/Database/Postgre/Builder.php(236): CodeIgniter\Database\BaseBuilder->delete()
+#6 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/Model.php(456): CodeIgniter\Database\Postgre\Builder->delete()
+#7 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/BaseModel.php(1065): CodeIgniter\Model->doDelete()
+#8 /home/dylan/Desktop/Codeigniter/mine/multi-models/app/Libraries/MultiModels.php(85): CodeIgniter\BaseModel->delete()
+#9 /home/dylan/Desktop/Codeigniter/mine/multi-models/app/Controllers/TestController.php(63): App\Libraries\MultiModels->do_delete()
+#10 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/CodeIgniter.php(932): App\Controllers\TestController->delete()
+#11 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#12 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#13 /home/dylan/Desktop/Codeigniter/mine/multi-models/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#14 /home/dylan/Desktop/Codeigniter/mine/multi-models/system/Commands/Server/rewrite.php(47): require_once('...')
+#15 {main}
