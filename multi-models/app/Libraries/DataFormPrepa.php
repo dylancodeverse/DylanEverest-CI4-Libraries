@@ -29,12 +29,8 @@ class DataFormPrepa
     {
         if(is_array($value)) 
         {
-            foreach($value as $key1 => $value2)
-            {
-                $array[$key1]=$value2;
-            }
+            $array[$key] = $value;
         }
- 
         elseif (!empty(json_decode($value))) 
         {
             $arrayAssoc = json_decode($value,true);             
@@ -46,10 +42,6 @@ class DataFormPrepa
                 
         }
  
-        else
-        {
-            $array[$key] = $value;
-        }
 
         return $array;
     }
