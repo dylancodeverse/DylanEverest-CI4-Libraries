@@ -2,6 +2,7 @@
 
 namespace App\Controllers;
 
+use App\Libraries\DataFormPrepa;
 use App\Models\UserModel;
 use App\Models\ProductModel;
 use App\Libraries\MultiModels;
@@ -69,5 +70,16 @@ class TestController extends Controller
                     echo "Une erreur s'est produite lors de la' supp des données.";
                 }
 
+    }
+
+    public function testDATA()
+    {
+        echo "TAY";
+        $dataF= new DataFormPrepa("tay");
+        $dataF->getDataForm();
+    }
+    public function loadView()
+    {
+        return view('dataForm');
     }
 }

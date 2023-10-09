@@ -9,6 +9,7 @@ class MultiModels
     protected $db ;
 
 
+
     public function __construct($modelss=null,string $group )
     {
         $this->models =$modelss;
@@ -77,36 +78,22 @@ class MultiModels
         try {
             foreach ($this->models as $modelClass) {
                 $model = new $modelClass($this->db);
-    
-                // Appelez la méthode doDelete de la classe de base CodeIgniter\Model
-                echo $refIds[$model->primaryKey];
-                echo $model->table;
-
                 $result = $model->delete($refIds[$model->primaryKey]);
-                echo '
-                ';
-                echo $result ;
-                echo ' ';
                 // Vérifiez si la suppression a réussi
                 if (!$result) {
                     // La suppression a échoué pour cet enregistrement, annulez la transaction
-
                     $this->db->transRollback();
                     return false;
                 }
             }
-    
             $this->db->transComplete(); // Terminez la transaction
-
     
             if ($this->db->transStatus() === false) {
                 // La transaction a échoué, retournez false
                 return false;
             }
-    
             return true;
         } catch (\Exception $e) {
-            // Une exception s'est produite, annulez la transaction
             echo $e ;
             $this->db->transRollback();
             return false;

@@ -33,6 +33,9 @@ $routes->get('/', 'Home::index');
 $routes->get('/misa','TestController::index');
 $routes->get('/fafao','TestController::delete');
 
+$routes->post('/test','TestController::testDATA');
+$routes->get('/view','TestController::loadView');
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing
