@@ -6,15 +6,13 @@ class DataFormPrepa
 
     protected $method = 'POST';
 
-    public function __construct ($haha) {
-        echo 'huhu';   
-    }
-    public function vi ()
-    {
-        return view("dataForm");
-    }
     public function getDataForm ()
     {
-        echo $_POST ;
+        $userData =[];
+
+        foreach ($_POST as $key => $value) {
+            $userData[$key] = $value;            
+        }
+        var_dump($userData);
     }
 }
