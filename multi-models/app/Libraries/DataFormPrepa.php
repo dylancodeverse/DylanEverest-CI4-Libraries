@@ -3,16 +3,38 @@ namespace App\Libraries;
 
 class DataFormPrepa
 {
-
-    protected $method = 'POST';
-
-    public function getDataForm ()
+    public function getDataForm ($method)
     {
+        
         $userData =[];
+        if ( strtolower($method) =='post') 
+        {
+            foreach ($_POST as $key => $value) 
+            {
+                $this->translate($userData, $key, $value);
 
-        foreach ($_POST as $key => $value) {
-            $userData[$key] = $value;            
+            }
         }
-        var_dump($userData);
+        elseif (strtolower($method) =='get')
+        {
+            foreach ($_GET as $key => $value) 
+            {
+                $this->translate($userData, $key, $value);
+            }
+        }        
+
+        return $userData;
+    }
+
+    private function translate($array,$key, $value)
+    {
+        if (!empty(json_decode($value))) 
+        {
+            $array[$key] = json_decode($value);             
+        }
+        else
+        {
+            $array[$key] = $value;
+        }
     }
 }

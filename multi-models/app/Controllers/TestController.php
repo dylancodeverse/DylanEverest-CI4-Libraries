@@ -77,7 +77,7 @@ class TestController extends Controller
 
         echo "TAY";
         $dataF= new DataFormPrepa("tay");
-        $dataF->getDataForm();
+        $dataF->getDataForm('post');
     }
     public function loadView()
     {
