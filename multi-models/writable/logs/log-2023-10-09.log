@@ -1,0 +1,35 @@
+CRITICAL - 2023-10-09 11:37:18 --> Class "App\Libraries\DataFormPrepa" not found
+in APPPATH/Controllers/TestController.php on line 78.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TestController->testDATA()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/dylan/Desktop/Codeigniter/mine/multi-models/public/index.php')
+CRITICAL - 2023-10-09 11:49:52 --> Class "App\Libraries\DataFormPrepa" not found
+in APPPATH/Controllers/TestController.php on line 79.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TestController->testDATA()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/dylan/Desktop/Codeigniter/mine/multi-models/public/index.php')
+CRITICAL - 2023-10-09 11:50:44 --> Class "App\Libraries\DataFormPrepa" not found
+in APPPATH/Controllers/TestController.php on line 79.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TestController->testDATA()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/dylan/Desktop/Codeigniter/mine/multi-models/public/index.php')
+CRITICAL - 2023-10-09 11:50:47 --> Class "App\Libraries\DataFormPrepa" not found
+in APPPATH/Controllers/TestController.php on line 79.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TestController->testDATA()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/dylan/Desktop/Codeigniter/mine/multi-models/public/index.php')
+CRITICAL - 2023-10-09 11:51:12 --> Class "App\Libraries\DataFormPrepa" not found
+in APPPATH/Controllers/TestController.php on line 79.
+ 1 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\TestController->testDATA()
+ 2 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 3 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 4 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/dylan/Desktop/Codeigniter/mine/multi-models/public/index.php')

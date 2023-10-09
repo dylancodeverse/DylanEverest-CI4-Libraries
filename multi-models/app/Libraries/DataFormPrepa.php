@@ -1,7 +1,8 @@
 <?
 namespace App\Libraries;
 
-class DataFormPrepa {
+class DataFormPrepa
+{
 
     protected $method = 'POST';
 

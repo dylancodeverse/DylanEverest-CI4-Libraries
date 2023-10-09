@@ -74,6 +74,7 @@ class TestController extends Controller
 
     public function testDATA()
     {
+
         echo "TAY";
         $dataF= new DataFormPrepa("tay");
         $dataF->getDataForm();
