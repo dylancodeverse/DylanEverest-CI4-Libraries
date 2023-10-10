@@ -2,6 +2,7 @@
 
 namespace Config;
 
+use App\Controllers\domPDF\TestPDF;
 use App\Controllers\testupload\TestUpload;
 
 // Create a new instance of our RouteCollection class.
@@ -34,7 +35,7 @@ $routes->set404Override();
 // $routes->get('/', 'Home::index');
 $routes->get('/', [TestUpload::class,'index']);
 $routes->post('/upload', [TestUpload::class,'testUpload']);
-
+$routes->get('/pdf',[TestPDF::class,'index']);
 
 /*
  * --------------------------------------------------------------------
