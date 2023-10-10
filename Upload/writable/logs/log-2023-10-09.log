@@ -1,0 +1,32 @@
+CRITICAL - 2023-10-09 17:07:56 --> Call to a member function hasMoved() on null
+in APPPATH/Libraries/Uploader.php on line 21.
+ 1 APPPATH/Controllers/testupload/TestUpload.php(18): App\Libraries\Uploader->uploadSingle()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\testupload\TestUpload->testUpload()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/dylan/Desktop/Codeigniter/mine/Upload/public/index.php')
+CRITICAL - 2023-10-09 17:14:41 --> Call to a member function hasMoved() on null
+in APPPATH/Libraries/Uploader.php on line 21.
+ 1 APPPATH/Controllers/testupload/TestUpload.php(18): App\Libraries\Uploader->uploadSingle()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\testupload\TestUpload->testUpload()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/dylan/Desktop/Codeigniter/mine/Upload/public/index.php')
+CRITICAL - 2023-10-09 17:15:34 --> Call to a member function hasMoved() on null
+in APPPATH/Libraries/Uploader.php on line 21.
+ 1 APPPATH/Controllers/testupload/TestUpload.php(18): App\Libraries\Uploader->uploadSingle()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\testupload\TestUpload->testUpload()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/dylan/Desktop/Codeigniter/mine/Upload/public/index.php')
+CRITICAL - 2023-10-09 17:15:48 --> Call to a member function hasMoved() on null
+in APPPATH/Libraries/Uploader.php on line 20.
+ 1 APPPATH/Controllers/testupload/TestUpload.php(18): App\Libraries\Uploader->uploadSingle()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\testupload\TestUpload->testUpload()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/dylan/Desktop/Codeigniter/mine/Upload/public/index.php')

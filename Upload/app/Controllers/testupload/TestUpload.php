@@ -13,8 +13,9 @@ class TestUpload extends BaseController
     }
     public function testUpload()
     {
+
         $upload= new Uploader();
-        echo $upload->upload($this->request,"file");
+        echo $upload->uploadSingle($this->request,"file[]");
 
     }
 }
