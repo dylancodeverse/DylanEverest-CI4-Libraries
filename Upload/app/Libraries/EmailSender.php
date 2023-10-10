@@ -32,13 +32,8 @@ class EmailSender
      * Mila mi set anle fandehany alony 
      * form anle array
      */
-    public function sendEmail()
-    {
 
-    }
-
-
-    public function setFrom(array $array)
+    public function sendEmail(array $array)
     {
         $fromMail = isset($array['fromMail']) ? $array['fromMail'] : '';
         
