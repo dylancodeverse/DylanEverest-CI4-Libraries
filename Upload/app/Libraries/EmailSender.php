@@ -28,6 +28,8 @@ class EmailSender
     {
         $this->email->initialize($conf);
     }
+
+    
     /**
      * Mila mi set anle fandehany alony 
      * form anle array
