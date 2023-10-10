@@ -9,8 +9,8 @@
 
         <label for="file">File</label>
 
-        <input id="file" name="file[]" type="file" />
-        <input id="file" name="file[]" type="file" />
+        <input id="file" name="file[details][avatar][]" type="file" />
+        <input id="file" name="file[details][avatar][]" type="file" />
 
         <button>Upload</button>
  

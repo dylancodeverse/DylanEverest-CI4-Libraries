@@ -15,7 +15,7 @@ class TestUpload extends BaseController
     {
 
         $upload= new Uploader();
-        echo $upload->uploadSingle($this->request,"file[]");
+        echo $upload->uploadGroupFile($this->request,["file[details][avatar]"]);
 
     }
 }

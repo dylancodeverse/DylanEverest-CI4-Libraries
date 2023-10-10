@@ -29,7 +29,7 @@ class Uploader extends BaseController
 
     public function uploadGroupFile(CLIRequest|IncomingRequest $request, array $fileNames)
     {
-        $result =null;
+        $result =array();
         foreach ($fileNames as $fileName) 
         {
             try 
@@ -50,7 +50,6 @@ class Uploader extends BaseController
     private function arrayFilesTreatement(CLIRequest|IncomingRequest $request, array $files)
     {
         $result =array() ;
-
         foreach ($files as $file) 
         {
             if (is_array($file)) 
@@ -65,7 +64,10 @@ class Uploader extends BaseController
         
                     $result [] = $filepath;
                 }
-                throw new Exception ("ERROR");
+                else
+                {
+                    throw new Exception ("ERROR");
+                }
             }
         }
         return $result ;
