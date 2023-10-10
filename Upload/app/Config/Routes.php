@@ -37,6 +37,8 @@ $routes->get('/', [TestUpload::class,'index']);
 $routes->post('/upload', [TestUpload::class,'testUpload']);
 $routes->get('/pdf',[TestPDF::class,'index']);
 
+$routes->get('pdfview',[TestPDF::class,'testView']);
+
 /*
  * --------------------------------------------------------------------
  * Additional Routing

@@ -1,0 +1,16 @@
+CRITICAL - 2023-10-10 07:16:13 --> Too few arguments to function App\Libraries\PdfGenerator::generatePDF(), 1 passed in /home/dylan/Desktop/Codeigniter/mine/Upload/app/Controllers/domPDF/TestPDF.php on line 13 and exactly 2 expected
+in APPPATH/Libraries/PdfGenerator.php on line 11.
+ 1 APPPATH/Controllers/domPDF/TestPDF.php(13): App\Libraries\PdfGenerator->generatePDF()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\domPDF\TestPDF->index()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/dylan/Desktop/Codeigniter/mine/Upload/public/index.php')
+CRITICAL - 2023-10-10 07:16:15 --> Too few arguments to function App\Libraries\PdfGenerator::generatePDF(), 1 passed in /home/dylan/Desktop/Codeigniter/mine/Upload/app/Controllers/domPDF/TestPDF.php on line 13 and exactly 2 expected
+in APPPATH/Libraries/PdfGenerator.php on line 11.
+ 1 APPPATH/Controllers/domPDF/TestPDF.php(13): App\Libraries\PdfGenerator->generatePDF()
+ 2 SYSTEMPATH/CodeIgniter.php(932): App\Controllers\domPDF\TestPDF->index()
+ 3 SYSTEMPATH/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+ 4 SYSTEMPATH/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+ 5 FCPATH/index.php(67): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH/Commands/Server/rewrite.php(47): require_once('/home/dylan/Desktop/Codeigniter/mine/Upload/public/index.php')

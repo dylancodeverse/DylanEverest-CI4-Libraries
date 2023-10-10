@@ -3,19 +3,14 @@
 namespace App\Controllers\domPDF;
 
 use App\Controllers\BaseController;
-use Dompdf\Dompdf ;
+use App\Libraries\PdfGenerator;
 
 class TestPDF extends BaseController
 {
     public function index()
     {
-        $dompdf = new Dompdf();
-        $dompdf->loadHtml(view('testPDF/ViewPdf'));
-        $dompdf->setPaper('A4', 'landscape');
-        $dompdf->render();
-        $dompdf->stream();
-
-        
+        $generator = new PdfGenerator();
+        $generator->generatePDF('testPDF/ViewPdf');
     }
     public function testView()
     {

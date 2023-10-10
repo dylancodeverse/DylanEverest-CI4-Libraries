@@ -3,8 +3,53 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="assets/styles.css">
     <title>Liste des Employés</title>
+    <style>
+        /* Styles pour le tableau */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #007BFF;
+            color: #fff;
+        }
+
+        /* Styles pour le titre */
+        h1 {
+            font-size: 28px;
+            color: #007BFF;
+            margin-bottom: 20px;
+        }
+
+        /* Styles pour le conteneur */
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Styles pour les légendes */
+        .legend {
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Couleur de fond pour les lignes impaires du tableau */
+        tr:nth-child(odd) {
+            background-color: #f2f2f2;
+        }
+    </style>
 </head>
 <body>
     <div class="container">
@@ -34,7 +79,7 @@
                 <tr>
                     <td>2</td>
                     <td>Jane Smith</td>
-                    <td>45 000 €</td>
+                    <td><?php echo "45 000 €"?> </td>
                 </tr>
                 <tr>
                     <td>3</td>
