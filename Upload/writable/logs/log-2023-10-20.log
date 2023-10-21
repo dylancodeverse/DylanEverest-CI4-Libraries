@@ -1,0 +1,17 @@
+ERROR - 2023-10-20 09:05:19 --> Email: sendWithSmtp throwed ErrorException: fsockopen(): php_network_getaddresses: getaddrinfo for smtp.googlemail.com failed: Temporary failure in name resolution in /home/dylan/Desktop/Codeigniter/mine/Upload/system/Email/Email.php:1863
+Stack trace:
+#0 [internal function]: CodeIgniter\Debug\Exceptions->errorHandler()
+#1 /home/dylan/Desktop/Codeigniter/mine/Upload/system/Email/Email.php(1863): fsockopen()
+#2 /home/dylan/Desktop/Codeigniter/mine/Upload/system/Email/Email.php(1782): CodeIgniter\Email\Email->SMTPConnect()
+#3 /home/dylan/Desktop/Codeigniter/mine/Upload/system/Email/Email.php(1667): CodeIgniter\Email\Email->sendWithSmtp()
+#4 /home/dylan/Desktop/Codeigniter/mine/Upload/system/Email/Email.php(1565): CodeIgniter\Email\Email->spoolEmail()
+#5 /home/dylan/Desktop/Codeigniter/mine/Upload/app/Libraries/EmailSender.php(96): CodeIgniter\Email\Email->send()
+#6 /home/dylan/Desktop/Codeigniter/mine/Upload/app/Controllers/emailTest/EmailTest.php(23): App\Libraries\EmailSender->sendEmail()
+#7 /home/dylan/Desktop/Codeigniter/mine/Upload/system/CodeIgniter.php(932): App\Controllers\emailTest\EmailTest->index()
+#8 /home/dylan/Desktop/Codeigniter/mine/Upload/system/CodeIgniter.php(497): CodeIgniter\CodeIgniter->runController()
+#9 /home/dylan/Desktop/Codeigniter/mine/Upload/system/CodeIgniter.php(366): CodeIgniter\CodeIgniter->handleRequest()
+#10 /home/dylan/Desktop/Codeigniter/mine/Upload/public/index.php(67): CodeIgniter\CodeIgniter->run()
+#11 /home/dylan/Desktop/Codeigniter/mine/Upload/system/Commands/Server/rewrite.php(47): require_once('...')
+#12 {main}
+ERROR - 2023-10-20 09:05:19 --> Email: Unable to send email using SMTP. Your server might not be configured to send mail using this method.
+ERROR - 2023-10-20 09:05:19 --> 

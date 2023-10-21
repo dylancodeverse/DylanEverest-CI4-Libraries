@@ -20,7 +20,13 @@ class EmailTest extends BaseController
             'message' => 'Hello, this is a sample message. Goodbye !!!'
         ];
 
+
         echo $emailSender->sendEmail($data);
+    }
+
+    public function css()
+    {
+        return view("testFront/TestFront");
     }
 }
 
