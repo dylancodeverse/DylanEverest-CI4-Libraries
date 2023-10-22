@@ -4,6 +4,7 @@ namespace Config;
 
 use App\Controllers\domPDF\TestPDF;
 use App\Controllers\emailTest\EmailTest;
+use App\Controllers\test\TestController;
 use App\Controllers\testupload\TestUpload;
 
 // Create a new instance of our RouteCollection class.
@@ -34,9 +35,11 @@ $routes->set404Override();
 // We get a performance increase by specifying the default
 // route since we don't have to scan directories.
 // $routes->get('/', 'Home::index');
-$routes->get('/', [EmailTest::class,'index']);
+$routes->get('/mail', [EmailTest::class,'index']);
 $routes->get('/css', [EmailTest::class,'css']);
 
+$routes->get('/testnew' , [TestController::class ,'newMultiModelsFun']);
+$routes->get('/testnew2' , [TestController::class ,'newMultiModelsFun2']);
 
 /*
  * --------------------------------------------------------------------
