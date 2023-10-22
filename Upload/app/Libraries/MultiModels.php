@@ -27,7 +27,6 @@ class MultiModels
 
         if (empty($this->models) || empty($data) ) 
         {
-            var_dump($this->models);
             return false;
         }
 
@@ -75,7 +74,6 @@ class MultiModels
     {
         if (empty($this->models) || empty($data) ) 
         {
-            var_dump($this->models);
             return false;
         }
 
@@ -99,7 +97,6 @@ class MultiModels
                 }
             }
 
-            echo 'ato';
             $this->db->transComplete(); // Terminez la transaction
 
             if ($this->db->transStatus() === false) 
@@ -126,7 +123,6 @@ class MultiModels
 
         if (empty($this->models) || empty($data) ) 
         {
-            var_dump($this->models);
             return false;
         }
 
